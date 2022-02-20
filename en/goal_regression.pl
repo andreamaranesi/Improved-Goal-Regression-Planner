@@ -9,7 +9,7 @@
 :-dynamic(cost/2).
 :-dynamic(useless/2).
 
-:- [general_consequences].
+:- [logical_consequences].
 :- [second_problem].
 
 
