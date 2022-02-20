@@ -7,8 +7,6 @@ check_remains([Goal|Tail], Add, Acc, List):-
   check_remains(Tail, Add, Acc, List)).
 
 
-
-
 % find_contradictions (+ List1, + List2, + DeleteList, -ListC)
 % DeleteList = {true, false} => if true the literals of List2 are negated
 find_contradictions(List1,List2, DeleteList,ListC):-
