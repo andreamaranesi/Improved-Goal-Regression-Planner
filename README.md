@@ -1,5 +1,7 @@
 # Goal Regression Planner With Logical Consequences
 
+There are **two directories** in the project. **en** contains the project with the **english** documentation, **it** in italian.
+
 To obtain the logical consequences, we declare as dynamically true the predicates that are passed through the `S2` list.
 We keep a pointer called `list` to `S2`, in order to be able to modify its variables at runtime, which will be able to unify with those of `S1`, in the event that all the goals of `S1` are a logical consequence of `S2`.
 
@@ -291,5 +293,6 @@ The other lists become the origin of a new search, which will lead to finding th
 
 Example: if the first list has A as its first action, and B as its second, if the second list has A as its first action, and C as its second action, findElements will return the following result:
 
-X = [A + NN - [B + NN - [] | [C + NN - [] | []]]
-NN represents the variable that indicates whether or not that NODE, that is an ACTION, will be chosen in the shortest path.
+`X = [A + NN - [B + NN - [] | [C + NN - [] | []]]`
+
+`NN` represents the variable that indicates whether or not that NODE, that is an ACTION, will be chosen in the shortest path.
