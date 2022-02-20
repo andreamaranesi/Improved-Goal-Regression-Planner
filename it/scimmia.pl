@@ -23,10 +23,10 @@ operatore(appendi(B,X),                                            % appende B i
     [stato(B,prese), sopra(scimmia,scala),inp(scala,X), sopra(scala,pavimento)],
     [stato(B,prese)],
     [stato(B,pendenti), inp(B,X)]):-B=banane;B=altro.
-% operatore(applaudi,                                            % applaudi
+% operatore(applaudi(B),                                            % applaudi
  %   [stato(B,pendenti), sopra(scimmia,pavimento)],
  %  [stato(B,pendenti)],
- %   [stato(B,prese)]).
+ %   [premio(B)]).
 
 
 % costi degli operatori
