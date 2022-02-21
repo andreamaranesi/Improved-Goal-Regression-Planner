@@ -32,7 +32,7 @@ states([T|C], DeleteList):-
    (\+ground(X),
   asserta((v(not(X),true) :- ri(T,DeleteList))),!;asserta(v(not(X),true)))
  ;
-  asserta(v(NT,false)), % altrimenti
+  asserta(v(NT,false)), % otherwise
    (\+ground(NT),
   asserta((v(NT,true) :- ri(NT,DeleteList))),!;asserta(v(NT,true)))
              ),
