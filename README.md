@@ -114,9 +114,9 @@ took(X) :- \+ (v(took(Y)), X\==Y), \+ (v(above(X,_))), \+ (v(above(_,X))),
 
 The predicate **`infer(Goal, Contr) :-`** checks whether the Goal is a logical consequence of the new status declared.
 
-`Contr` is a variable that takes the values `{false, true}`, if **true** symbolizes we are looking for a **contradiction.**
+`Contr` is a variable that takes the values `{false, true}`, if **true** symbolizes we are looking for a **contradiction**.
 
-Contradictions are found when  **A and not(A) is true, or when the general rules applied are violated. **
+Contradictions are found when  **A and not(A) is true, or when the general rules applied are violated**.
 
 Example:
 
