@@ -100,7 +100,7 @@ logical_consequence(S1,S2,false) => false
 
 These general rules are declared in the program a priori.
 
-For example for the block scheduling problem (file **second_problem.pl**):
+For example for the block scheduling problem (file **generic_problem.pl**):
 
 ```prolog
 %general constraints
